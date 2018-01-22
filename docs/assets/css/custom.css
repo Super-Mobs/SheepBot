@@ -1,0 +1,74 @@
+body {
+    height:100%;
+}
+/* Logo Hover */
+.hover {
+    width: 100px;
+    height: 100px;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+.hover:hover {
+    width: 300px;
+}
+
+/*Command Page */
+* {
+    box-sizing: border-box;
+}
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.commandlist {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.commandlist:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.commandlist .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.commandlist li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.commandlist .grey {
+    background-color: rgb(230, 250, 252);
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+.footercontainer {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+/*Commands Page */
+.commandtable {
+    padding-right: 40px;
+    padding-left: 40px;
+}

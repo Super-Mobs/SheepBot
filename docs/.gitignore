@@ -47,6 +47,4 @@ Temporary Items
 .apdisk
 
 
-bwd
-app.js
-node_modules
+.vscode
