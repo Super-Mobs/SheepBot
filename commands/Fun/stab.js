@@ -1,6 +1,5 @@
 exports.run = (client, msg, [member]) => {
-  const args = member;
- msg.reply(`has stabbed ${args}`);
+msg.reply(`has stabbed ${member}`);
  };
 exports.conf = {
   enabled: true,
