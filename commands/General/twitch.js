@@ -30,6 +30,7 @@ exports.conf = {
   botPerms: [],
   requiredFuncs: [],
   requiredModules: [],
+  embed: false,
 };
 
 exports.help = {

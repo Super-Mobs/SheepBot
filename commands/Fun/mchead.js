@@ -1,11 +1,15 @@
 exports.run = (client, msg, [username]) => {
   const args = username;
-   const embed = new client.methods.Embed()
-       .setColor('0fa511')
-       .setAuthor(`${args}`, ``)
-       .setImage(`https://crafatar.com/renders/head/${args}`)
-       msg.channel.send({embed});
- };
+  if (msg.guild.settings.embeds == true) {
+    const embed = new client.methods.Embed()
+          .setColor('0fa511')
+          .setAuthor(`${args}`, ``)
+          .setImage(`https://crafatar.com/renders/head/${args}`)
+     msg.channel.send({embed});
+     } else {
+       msg.channel.send(`https://crafatar.com/renders/head/${args}`)
+     }
+    };
 exports.conf = {
   enabled: true,
   selfbot: false,
@@ -15,6 +19,7 @@ exports.conf = {
   botPerms: [],
   requiredFuncs: [],
   requiredModules: [],
+  embed: true,
 };
 exports.help = {
   name: "mchead",

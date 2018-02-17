@@ -7,7 +7,7 @@ exports.run = async (client, msg) => {
   const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
   if (msg.guild.settings.embeds == true) {
     const embed = new client.methods.Embed()
-    .setColor(6570406)
+    .setColor(Math.floor(Math.random() * 16777215))
     .setThumbnail(client.user.avatarURL())
     .setTitle("Sheep Bot Statistics")
     .addField("Mem Usage", `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, true)
@@ -42,6 +42,7 @@ exports.conf = {
   botPerms: ["SEND_MESSAGES"],
   requiredFuncs: [],
   requiredSettings: [],
+  embed: true,
 };
 
 exports.help = {
