@@ -22,6 +22,7 @@
     "slot-machine": "^2.1.0",
     "snekfetch": "^3.6.1",
     "sqlite": "^2.9.1",
+    "wolfram-alpha": "^0.6.0",
     "ytdl-core": "^0.15.2"
   },
   "devDependencies": {},

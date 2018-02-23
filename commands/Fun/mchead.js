@@ -2,12 +2,12 @@ exports.run = (client, msg, [username]) => {
   const args = username;
   if (msg.guild.settings.embeds == true) {
     const embed = new client.methods.Embed()
-          .setColor('0fa511')
+          .setColor(Math.floor(Math.random() * 16777215))
           .setAuthor(`${args}`, ``)
-          .setImage(`https://crafatar.com/renders/head/${args}`)
+          .setImage(`https://visage.surgeplay.com/head/512/${args}`)
      msg.channel.send({embed});
      } else {
-       msg.channel.send(`https://crafatar.com/renders/head/${args}`)
+       msg.channel.send(`https://visage.surgeplay.com/head/512/${args}`)
      }
     };
 exports.conf = {
