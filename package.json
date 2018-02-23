@@ -9,6 +9,7 @@
     "express": "^4.16.2",
     "fast-html-parser": "^1.0.1",
     "ffmpeg": "^0.0.4",
+    "figlet": "^1.2.0",
     "fortnite": "^3.0.0",
     "fs-extra-promise": "^1.0.1",
     "google-tts-api": "^0.0.1",
